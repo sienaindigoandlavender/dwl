@@ -8,7 +8,7 @@ import { PORTFOLIO } from "@/lib/portfolio";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Dancing with Lions is a travel tech company building the cultural intelligence layer of the internet."
+    "Dancing with Lions is a travel tech company. Six product lines. The portfolio is the proof."
 };
 
 export default function AboutPage() {
@@ -23,7 +23,11 @@ export default function AboutPage() {
         <Reveal delay={80}>
           <h1
             className="serif text-text"
-            style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", lineHeight: 1.0, letterSpacing: "-0.03em" }}
+            style={{
+              fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
+              lineHeight: 1.0,
+              letterSpacing: "-0.03em"
+            }}
           >
             The company.
           </h1>
@@ -40,23 +44,23 @@ export default function AboutPage() {
           <div className="md:col-span-9 space-y-6 max-w-prose">
             <Reveal delay={60}>
               <p className="text-body text-text-body">
-                Dancing with Lions is a travel tech company. We build the cultural intelligence
-                layer of the internet — the structured, machine-readable, source-of-truth layer
-                that platforms and search engines never made.
+                Dancing with Lions is a travel tech company. Six product lines: host, write, teach,
+                sell, measure, archive. One umbrella.
               </p>
             </Reveal>
             <Reveal delay={120}>
               <p className="text-body text-text-body">
-                The portfolio is the proof. A working riad in Marrakech. Editorial properties that
-                map countries and crafts at depth. Reference archives that ground AI answers in
-                real records. Each property is a different surface on the same thesis: culture is
-                data, and the world becomes legible when you map what connects.
+                The thesis is calm. Travel, done well, is a considered act — not a chaotic one. We
+                design technology that helps people arrive considered and stay that way: a working
+                riad, editorial properties that read slowly, language apps for the languages that
+                actually get spoken, a pantry, a rug house, a real-estate layer, archives for the
+                things that tend to drift.
               </p>
             </Reveal>
             <Reveal delay={180}>
               <p className="text-body text-text-body">
-                The portfolio earns the right to build the systems. The systems are the company.
-                Travel tech is the umbrella.
+                The portfolio is the proof. Each property is a different surface on the same idea.
+                The travel tech is the company.
               </p>
             </Reveal>
           </div>
@@ -84,6 +88,14 @@ export default function AboutPage() {
                         >
                           {p.name}
                         </Link>
+                        {p.status && (
+                          <span
+                            className="mono ml-2 align-middle text-text-muted"
+                            style={{ fontSize: "11px" }}
+                          >
+                            ({p.status})
+                          </span>
+                        )}
                       </div>
                       <div className="md:col-span-6 mono text-sm text-text-secondary self-center">
                         {p.positioning}
@@ -91,8 +103,8 @@ export default function AboutPage() {
                       <div className="md:col-span-2 md:text-right">
                         <a
                           href={p.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target={p.url.startsWith("http") ? "_blank" : undefined}
+                          rel={p.url.startsWith("http") ? "noopener noreferrer" : undefined}
                           className="mono uppercase-meta arrow-link text-text"
                         >
                           Visit <span className="arrow">↗</span>
@@ -117,11 +129,8 @@ export default function AboutPage() {
           <div className="md:col-span-9 max-w-prose">
             <Reveal delay={60}>
               <p className="text-body text-text-body">
-                <span className="serif text-2xl text-text" style={{ letterSpacing: "-0.02em" }}>
-                  Jacqueline Ng, Founder.
-                </span>{" "}
-                Operates the hospitality property and runs the company. The work is the portfolio
-                and the systems it produces.
+                Jacqueline Ng is the Canadian Founder and Architect of the Dancing with Lions
+                ecosystem. She is based in Marrakech, Morocco.
               </p>
             </Reveal>
           </div>
