@@ -3,20 +3,39 @@ import Link from "next/link";
 import Masthead from "@/components/Masthead";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import JsonLd from "@/components/JsonLd";
 import { PORTFOLIO } from "@/lib/portfolio";
+import { aboutPageSchema, breadcrumbSchema, personSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Dancing with Lions is a travel tech company. Six product lines. The portfolio is the proof."
+    "Dancing with Lions is a travel tech company. Six product lines. The portfolio is the proof.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About — Dancing with Lions",
+    description: "The company, the portfolio, the founder.",
+    url: "/about",
+    type: "website"
+  }
 };
 
 export default function AboutPage() {
   return (
     <>
       <Masthead />
+      <JsonLd
+        data={[
+          aboutPageSchema(),
+          personSchema(),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "About", url: "/about" }
+          ])
+        ]}
+      />
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-12">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-12">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-6">About</div>
         </Reveal>
@@ -34,7 +53,7 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pb-24">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-3">
             <Reveal>
@@ -68,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-background-alt">
-        <div className="mx-auto max-w-content px-6 md:px-10 py-24">
+        <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div className="md:col-span-3">
               <Reveal>
@@ -119,7 +138,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-content px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-3">
             <Reveal>

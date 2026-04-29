@@ -7,7 +7,14 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "What Dancing with Lions builds — hospitality systems, editorial infrastructure, and cultural data infrastructure."
+    "What Dancing with Lions builds — hospitality systems, editorial infrastructure, and cultural data infrastructure.",
+  alternates: { canonical: "/products" },
+  openGraph: {
+    title: "Products — Dancing with Lions",
+    description: "Three product lines under the travel tech umbrella.",
+    url: "/products",
+    type: "website"
+  }
 };
 
 type Status = "Operating" | "In development" | "Roadmap";
@@ -64,7 +71,7 @@ export default function ProductsPage() {
     <>
       <Masthead />
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-16">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-6">Products</div>
         </Reveal>
@@ -84,7 +91,7 @@ export default function ProductsPage() {
         </Reveal>
       </section>
 
-      <div className="mx-auto max-w-content px-6 md:px-10 pb-24 md:pb-32 space-y-20 md:space-y-24">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24 md:pb-32 space-y-20 md:space-y-24">
         {LINES.map((line) => (
           <Reveal key={line.number}>
             <article className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 border-t border-border pt-12">

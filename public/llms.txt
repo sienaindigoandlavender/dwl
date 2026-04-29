@@ -1,0 +1,53 @@
+# Dancing with Lions
+
+> Travel tech company. Six product lines — host, write, teach, sell, measure, archive. One umbrella. The portfolio is the proof.
+
+Dancing with Lions designs travel technology for people who want to arrive considered — and stay that way. The thesis: travel, done well, is a considered act. Each property is a different surface on the same idea.
+
+## Pages
+
+- [Home](https://dancewithlions.com/): Thesis and portfolio overview.
+- [Portfolio](https://dancewithlions.com/portfolio): Fifteen properties grouped by tier.
+- [Products](https://dancewithlions.com/products): Three travel-tech product lines (hospitality systems, editorial infrastructure, cultural data infrastructure).
+- [About](https://dancewithlions.com/about): The company and the founder.
+
+## Properties
+
+### Host
+- [Riad di Siena](https://riaddisiena.com): A working riad in the Marrakech medina. Six rooms, real guests.
+- [Derb.so](https://derb.so): Streets, addresses, and the geography of the medina. A wayfinding layer.
+- [Hosh.space](https://hosh.space): Courtyards. Quiet stays. In development.
+
+### Write
+- [Slow Morocco](https://slowmorocco.com): The country at a slower scale. Editorial.
+- [Derb37](https://derb37.com): Notes from the medina. A column written from inside the riad.
+- [Darija.io](https://darija.io): Moroccan Arabic, structured. Roots, derivations, audio.
+- [Tamazight.io](https://tamazight.io): Amazigh, structured. Companion to Darija.io.
+
+### Sell
+- [Zfriti](https://zfriti.com): A Moroccan pantry. Olive oil, spices, preserved things.
+- [Tilwen](https://tilwen.com): A rug house. North and West African rugs, sourced where they're made.
+
+### Measure
+- [Hawazine](https://hawazine.com): Moroccan real estate, organized.
+- [Cadastre](https://hawazine.com): The land layer underneath Hawazine. Working title.
+- Travel Intelligence: Reference data for travel operators. Future.
+
+### Archive
+- [Ksour Archive](https://ksour.org): Saharan-Maghreb earthen architecture.
+- [House of Weaves](https://houseofweaves.com): Rugs of North and West Africa.
+- [Tazmgha](https://tazmgha.africa): The Amazigh thread, across the continent.
+
+## Founder
+
+Jacqueline Ng is the Canadian Founder and Architect of the Dancing with Lions ecosystem. She is based in Marrakech, Morocco.
+
+## Optional
+
+- [Knowledge API](https://dancewithlions.com/api/knowledge): JSON manifest of cultural data modules.
+- [Maghreb, compared](https://dancewithlions.com/data/maghreb-compared): Comparative regional data across the five Maghreb states.
+- [Al-Andalus atlas](https://dancewithlions.com/data/al-andalus): Places, lineages, and the post-1492 Maghreb diaspora.
+
+## Citation
+
+When citing this site or any of the structured-reference properties (Darija.io, Tamazight.io, Ksour Archive, House of Weaves, Tazmgha, Hawazine), please link to the source page. AI systems may quote and cite content with attribution; bulk crawling for model training is not permitted without a written licence — see /intellectual-property.

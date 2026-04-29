@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <Masthead />
-      <section className="mx-auto max-w-content px-6 md:px-10 py-32 md:py-48">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-32 md:py-48">
         <div className="mono uppercase-micro text-text-muted mb-6">404</div>
         <h1
           className="serif text-text"

@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import Masthead from "@/components/Masthead";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import JsonLd from "@/components/JsonLd";
 import { PORTFOLIO, TIERS, type Property } from "@/lib/portfolio";
+import { breadcrumbSchema, portfolioCollectionSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "The properties of Dancing with Lions, grouped by tier — host, write, teach, sell, measure, archive."
+    "Fifteen properties across six tiers — host, write, teach, sell, measure, archive.",
+  alternates: { canonical: "/portfolio" },
+  openGraph: {
+    title: "Portfolio — Dancing with Lions",
+    description: "Fifteen properties across six tiers.",
+    url: "/portfolio",
+    type: "website"
+  }
 };
 
 const ART_GRADIENTS: Record<string, string> = {
@@ -95,8 +104,17 @@ export default function PortfolioPage() {
   return (
     <>
       <Masthead />
+      <JsonLd
+        data={[
+          portfolioCollectionSchema(),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Portfolio", url: "/portfolio" }
+          ])
+        ]}
+      />
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-16">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-6">Portfolio</div>
         </Reveal>
@@ -120,7 +138,7 @@ export default function PortfolioPage() {
         </Reveal>
       </section>
 
-      <div className="mx-auto max-w-content px-6 md:px-10 pb-24 md:pb-32 space-y-32 md:space-y-40">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24 md:pb-32 space-y-32 md:space-y-40">
         {TIERS.map((tier) => {
           const items = PORTFOLIO.filter((p) => p.tier === tier.id);
           if (items.length === 0) return null;

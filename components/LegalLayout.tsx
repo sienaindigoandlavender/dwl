@@ -7,7 +7,7 @@ export default function LegalLayout({ doc }: { doc: LegalDoc }) {
   return (
     <>
       <Masthead />
-      <article className="mx-auto max-w-3xl px-6 md:px-10 pt-16 md:pt-24 pb-24">
+      <article className="mx-auto max-w-3xl px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-24">
         <div className="mono uppercase-micro text-text-muted mb-6">Legal — Updated {doc.updated}</div>
         <h1
           className="serif text-text mb-12"

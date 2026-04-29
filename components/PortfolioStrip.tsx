@@ -6,7 +6,7 @@ import { TIERS, getProperty } from "@/lib/portfolio";
 export default function PortfolioStrip() {
   return (
     <div className="border-y border-border">
-      <div className="mx-auto max-w-content px-6 md:px-10 py-10">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-10">
         <div className="mono uppercase-micro text-text-muted mb-8">The portfolio</div>
         <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10">
           {TIERS.map((tier) => {

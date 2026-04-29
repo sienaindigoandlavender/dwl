@@ -27,7 +27,7 @@ export default function DataIndex() {
   return (
     <>
       <Masthead />
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-16">
         <div className="mono uppercase-micro text-text-muted mb-6">Data</div>
         <h1
           className="serif text-text"
@@ -43,7 +43,7 @@ export default function DataIndex() {
           product line.
         </p>
       </section>
-      <div className="mx-auto max-w-content px-6 md:px-10 pb-24 md:pb-32 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24 md:pb-32 grid grid-cols-1 md:grid-cols-2 gap-8">
         {MODULES.map((m) => (
           <Link
             key={m.slug}
