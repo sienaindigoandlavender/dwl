@@ -35,7 +35,7 @@ const LINES: ProductLine[] = [
     title: "Editorial infrastructure",
     positioning: "The stack underneath the editorial properties.",
     body:
-      "Next.js, Supabase, and an AI-agent layer that powers Slow Morocco, House of Weaves, and the Ksour Archive. Bidirectional graph publishing, machine-readable schema, structured data ready for GEO and AEO. The same stack ships every editorial property in the portfolio and is what we'll license externally as it matures.",
+      "The Next.js stack and AI-agent layer that powers Slow Morocco, House of Weaves, and the Ksour Archive. Bidirectional graph publishing, machine-readable schema, structured data ready for GEO and AEO. The same stack ships every editorial property in the portfolio and is what we'll license externally as it matures.",
     status: "In development"
   },
   {

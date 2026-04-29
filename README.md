@@ -7,8 +7,9 @@ The public site of Dancing with Lions — a travel tech company building the cul
 - Next.js 14 (App Router)
 - TypeScript (strict)
 - Tailwind CSS 3.4
-- Nexus Supabase (legal pages, newsletter)
 - Mapbox (only used on `/data/al-andalus`)
+
+No backend. Legal copy is bundled. There is no newsletter form and no submission endpoint.
 
 ## Routes
 
@@ -18,16 +19,15 @@ The public site of Dancing with Lions — a travel tech company building the cul
 | `/portfolio` | The properties |
 | `/products` | Three product lines (hospitality systems, editorial infrastructure, cultural data infrastructure) |
 | `/about` | Company + founder |
-| `/privacy`, `/terms`, `/disclaimer`, `/intellectual-property` | Legal — pulled from Nexus Supabase if configured, otherwise served from the local fallback |
+| `/privacy`, `/terms`, `/disclaimer`, `/intellectual-property` | Legal — bundled in `lib/legal.ts` |
 | `/data/maghreb-compared`, `/data/al-andalus` | Cultural data modules (linked from `/products`) |
 | `/api/knowledge` | Knowledge API manifest |
-| `/api/newsletter` | Newsletter subscribe endpoint |
 
 ## Local development
 
 ```bash
 cp .env.local.example .env.local
-# fill in Nexus Supabase + Mapbox values
+# add your Mapbox token if you want the atlas map to render
 npm install
 npm run dev
 ```
@@ -47,17 +47,15 @@ npm run build
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXUS_SUPABASE_URL` | Nexus Supabase project URL |
-| `NEXUS_SUPABASE_ANON_KEY` | Nexus Supabase anon key |
 | `NEXT_PUBLIC_MAPBOX_TOKEN` | Mapbox token (only `/data/al-andalus` reads this) |
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL — defaults to `https://dancewithlions.com` |
 
-When Nexus credentials are absent, legal pages fall back to bundled content and the newsletter endpoint accepts submissions but does not persist them.
+If `NEXT_PUBLIC_MAPBOX_TOKEN` is absent the atlas page renders an empty-state placeholder instead of the map.
 
 ## Deploy (Vercel)
 
 1. Import the repo into Vercel.
-2. Set the environment variables listed above in Project Settings → Environment Variables.
+2. Set the environment variables above in Project Settings → Environment Variables.
 3. Vercel auto-detects Next.js. Default build command (`next build`) is correct.
 4. Add the production domain `dancewithlions.com`.
 

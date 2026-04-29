@@ -1,5 +1,3 @@
-import { getNexusClient } from "./supabase";
-
 export type LegalSlug = "privacy" | "terms" | "disclaimer" | "intellectual-property";
 
 export type LegalDoc = {
@@ -9,7 +7,7 @@ export type LegalDoc = {
   body: string;
 };
 
-const FALLBACK: Record<LegalSlug, LegalDoc> = {
+const DOCS: Record<LegalSlug, LegalDoc> = {
   privacy: {
     slug: "privacy",
     title: "Privacy",
@@ -17,9 +15,9 @@ const FALLBACK: Record<LegalSlug, LegalDoc> = {
     body: [
       "Dancing with Lions ('we', 'us', 'the company') operates dancewithlions.com and a portfolio of related properties. This page describes what we collect, how we use it, and how to exercise your rights.",
       "## What we collect",
-      "We collect only what we need to operate the site: server logs (IP, user-agent, request path, timestamp), aggregated and anonymous usage statistics, and any email address you choose to provide via the newsletter form. We do not sell, rent, or share personal data with third-party advertisers.",
+      "We collect only what we need to operate the site: server logs (IP, user-agent, request path, timestamp) and aggregated, anonymous usage statistics. The site does not host a newsletter or any other form that captures personal information. We do not sell, rent, or share personal data with third-party advertisers.",
       "## How we use it",
-      "Server logs are used to operate the site, debug errors, and detect abuse. Aggregated usage data informs editorial and product decisions. Newsletter emails are used solely to send the newsletter and any direct, low-frequency communications you have opted into. You can unsubscribe at any time using the link in every newsletter email.",
+      "Server logs are used to operate the site, debug errors, and detect abuse. Aggregated usage data informs editorial and product decisions. We do not build user profiles for advertising or behavioural targeting.",
       "## Cookies",
       "We use a small number of strictly-necessary first-party cookies to operate the site. We do not use advertising cookies, cross-site trackers, or session-replay tools.",
       "## Your rights",
@@ -82,24 +80,6 @@ const FALLBACK: Record<LegalSlug, LegalDoc> = {
   }
 };
 
-export async function getLegalDoc(slug: LegalSlug): Promise<LegalDoc> {
-  const client = getNexusClient();
-  if (!client) return FALLBACK[slug];
-  try {
-    const { data, error } = await client
-      .from("legal_documents")
-      .select("slug,title,updated,body")
-      .eq("slug", slug)
-      .eq("site", "dancewithlions")
-      .maybeSingle();
-    if (error || !data) return FALLBACK[slug];
-    return {
-      slug: data.slug as LegalSlug,
-      title: String(data.title ?? FALLBACK[slug].title),
-      updated: String(data.updated ?? FALLBACK[slug].updated),
-      body: String(data.body ?? FALLBACK[slug].body)
-    };
-  } catch {
-    return FALLBACK[slug];
-  }
+export function getLegalDoc(slug: LegalSlug): LegalDoc {
+  return DOCS[slug];
 }
