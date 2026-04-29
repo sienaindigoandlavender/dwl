@@ -35,7 +35,7 @@ export default function AboutPage() {
         ]}
       />
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-12">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-12">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-6">About</div>
         </Reveal>
@@ -53,7 +53,7 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pb-24">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-3">
             <Reveal>
@@ -87,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-background-alt">
-        <div className="mx-auto max-w-content px-6 md:px-10 py-24">
+        <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
             <div className="md:col-span-3">
               <Reveal>
@@ -138,7 +138,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-content px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-3">
             <Reveal>

@@ -114,7 +114,7 @@ export default function PortfolioPage() {
         ]}
       />
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-16">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-6">Portfolio</div>
         </Reveal>
@@ -138,7 +138,7 @@ export default function PortfolioPage() {
         </Reveal>
       </section>
 
-      <div className="mx-auto max-w-content px-6 md:px-10 pb-24 md:pb-32 space-y-32 md:space-y-40">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24 md:pb-32 space-y-32 md:space-y-40">
         {TIERS.map((tier) => {
           const items = PORTFOLIO.filter((p) => p.tier === tier.id);
           if (items.length === 0) return null;

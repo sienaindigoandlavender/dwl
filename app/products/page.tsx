@@ -71,7 +71,7 @@ export default function ProductsPage() {
     <>
       <Masthead />
 
-      <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-16">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-6">Products</div>
         </Reveal>
@@ -91,7 +91,7 @@ export default function ProductsPage() {
         </Reveal>
       </section>
 
-      <div className="mx-auto max-w-content px-6 md:px-10 pb-24 md:pb-32 space-y-20 md:space-y-24">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pb-24 md:pb-32 space-y-20 md:space-y-24">
         {LINES.map((line) => (
           <Reveal key={line.number}>
             <article className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 border-t border-border pt-12">

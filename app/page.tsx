@@ -92,7 +92,7 @@ export default function HomePage() {
 
       {/* Thesis block — full viewport */}
       <section className="min-h-[calc(100vh-96px)] flex items-center">
-        <div className="mx-auto max-w-content w-full px-6 md:px-10 py-24">
+        <div className="mx-auto max-w-content w-full px-8 md:px-16 lg:px-24 py-24">
           <Reveal>
             <h1
               className="serif text-text"
@@ -118,7 +118,7 @@ export default function HomePage() {
       <PortfolioStrip />
 
       {/* Six tiers expanded */}
-      <section className="mx-auto max-w-content px-6 md:px-10 py-24 md:py-32">
+      <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24 md:py-32">
         <Reveal>
           <div className="mono uppercase-micro text-text-muted mb-12">Six tiers, one umbrella</div>
         </Reveal>
@@ -149,7 +149,7 @@ export default function HomePage() {
 
       {/* Closing line */}
       <section className="bg-background-alt">
-        <div className="mx-auto max-w-content px-6 md:px-10 py-32 md:py-44 text-center">
+        <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-32 md:py-44 text-center">
           <Reveal>
             <p
               className="serif serif-italic text-text mx-auto max-w-4xl"

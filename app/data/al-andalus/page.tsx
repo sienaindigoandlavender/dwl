@@ -23,7 +23,7 @@ export default function AlAndalusPage() {
   return (
     <>
       <Masthead />
-      <article className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-24">
+      <article className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-24">
         <div className="mono uppercase-micro text-text-muted mb-6">Data module — Operating</div>
         <h1
           className="serif text-text"

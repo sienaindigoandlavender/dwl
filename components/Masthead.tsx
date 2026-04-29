@@ -9,7 +9,7 @@ const NAV = [
 export default function Masthead() {
   return (
     <header className="w-full border-b-0">
-      <div className="mx-auto max-w-content px-6 md:px-10 py-6 flex items-center justify-between">
+      <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-6 flex items-center justify-between">
         <Link
           href="/"
           className="mono uppercase-meta text-text hover:text-text"
