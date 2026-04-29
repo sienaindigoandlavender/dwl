@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -10,19 +11,20 @@ const plexMono = IBM_Plex_Mono({
 });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dancewithlions.com";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-FQR11PP7DN";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Dancing with Lions — Travel tech for a more legible world",
+    default: "Dancing with Lions — Travel technology for people who want to arrive considered",
     template: "%s — Dancing with Lions"
   },
   description:
-    "Dancing with Lions builds the cultural intelligence layer of the internet — through a portfolio of hospitality, editorial, and archive properties.",
+    "Dancing with Lions is a travel tech company. Six product lines. One quiet idea — that travel, done well, is a considered act.",
   openGraph: {
     title: "Dancing with Lions",
     description:
-      "Travel tech for a more legible world. A portfolio of hospitality, editorial, and archive properties.",
+      "Travel technology for people who want to arrive considered. Six product lines, one umbrella.",
     url: SITE_URL,
     siteName: "Dancing with Lions",
     type: "website"
@@ -47,7 +49,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <style>{`:root { --font-instrument-serif: 'Instrument Serif', ui-serif, Georgia, serif; }`}</style>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
+      </body>
     </html>
   );
 }

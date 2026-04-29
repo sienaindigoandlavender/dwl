@@ -1,76 +1,180 @@
+export type Tier = "host" | "write" | "teach" | "sell" | "measure" | "archive";
+
+export type Status = "Operating" | "In development" | "Future" | "Working title";
+
 export type Property = {
   slug: string;
   name: string;
   url: string;
+  tier: Tier;
   positioning: string;
   context: string;
-  category: "host" | "publish" | "archive";
-  imageAlt: string;
+  status?: Status;
 };
 
+export const TIERS: { id: Tier; label: string; verb: string; marquee: string }[] = [
+  { id: "host", label: "Host", verb: "We host.", marquee: "riad-di-siena" },
+  { id: "write", label: "Write", verb: "We write.", marquee: "slow-morocco" },
+  { id: "teach", label: "Teach", verb: "We teach.", marquee: "darija-io" },
+  { id: "sell", label: "Sell", verb: "We sell.", marquee: "zfriti" },
+  { id: "measure", label: "Measure", verb: "We measure.", marquee: "hawazine" },
+  { id: "archive", label: "Archive", verb: "We archive.", marquee: "ksour-archive" }
+];
+
 export const PORTFOLIO: Property[] = [
+  // Host
   {
     slug: "riad-di-siena",
     name: "Riad di Siena",
     url: "https://riaddisiena.com",
-    positioning: "Operating riad in the Marrakech medina.",
+    tier: "host",
+    positioning: "A working riad in the Marrakech medina.",
     context:
-      "A working hospitality property and the company's ground truth — every operations playbook, review intelligence model, and dispute framework starts as something we ran in production here first.",
-    category: "host",
-    imageAlt: "Riad di Siena, Marrakech medina"
-  },
-  {
-    slug: "slow-morocco",
-    name: "Slow Morocco",
-    url: "https://slowmorocco.com",
-    positioning: "The country at a slower scale.",
-    context:
-      "An editorial property mapping Morocco at a depth that platforms can't render — long-form, regional, indexed. The reference layer for travelers who want the country, not the highlight reel.",
-    category: "publish",
-    imageAlt: "Slow Morocco editorial"
-  },
-  {
-    slug: "house-of-weaves",
-    name: "House of Weaves",
-    url: "https://houseofweaves.com",
-    positioning: "Textile archive, North and West Africa.",
-    context:
-      "An editorial archive of looms, fibers, motifs, and the people who keep them. Structured for citation, written to last, indexed by region, technique, and lineage.",
-    category: "publish",
-    imageAlt: "House of Weaves textile archive"
-  },
-  {
-    slug: "darija-io",
-    name: "Darija.io",
-    url: "https://darija.io",
-    positioning: "Structured Moroccan Arabic lexicon.",
-    context:
-      "A machine-readable reference for Moroccan Darija — roots, derivations, audio, dialect notes — built so that AI systems can cite it and humans can use it.",
-    category: "archive",
-    imageAlt: "Darija.io lexicon"
-  },
-  {
-    slug: "ksour-archive",
-    name: "Ksour Archive",
-    url: "https://ksourarchive.com",
-    positioning: "Saharan-Maghreb earthen architecture.",
-    context:
-      "A field archive of ksour, kasbahs, and the earthen building traditions of the southern Maghreb. Survey, photography, and structured records of a built environment that is changing fast.",
-    category: "archive",
-    imageAlt: "Ksour Archive field documentation"
+      "Six rooms, real guests, a kitchen that runs every day. Everything we know about hospitality, we learned with the keys in our hand."
   },
   {
     slug: "derb-so",
     name: "Derb.so",
     url: "https://derb.so",
+    tier: "host",
     positioning: "Streets, addresses, and the geography of the medina.",
     context:
-      "A wayfinding and place-data layer for the medina — names, aliases, and the small streets the standard maps don't render. A reference index for guests, operators, and travel platforms.",
-    category: "archive",
-    imageAlt: "Derb.so medina geography"
+      "A wayfinding layer for the medina — names, aliases, the small streets the standard maps miss. A reference for guests, operators, and travel platforms."
+  },
+  {
+    slug: "hosh-space",
+    name: "Hosh.space",
+    url: "https://hosh.space",
+    tier: "host",
+    status: "In development",
+    positioning: "Courtyards. Quiet stays.",
+    context:
+      "A short list of houses with courtyards, run the way Riad di Siena is run. In development."
+  },
+
+  // Write
+  {
+    slug: "slow-morocco",
+    name: "Slow Morocco",
+    url: "https://slowmorocco.com",
+    tier: "write",
+    positioning: "The country at a slower scale.",
+    context:
+      "Region, season, kitchen, lineage. Written slowly. Indexed for the long tail. Built for the reader past the first ten search results."
+  },
+  {
+    slug: "derb37",
+    name: "Derb37",
+    url: "https://derb37.com",
+    tier: "write",
+    positioning: "Notes from the medina.",
+    context:
+      "A column written from inside the riad. Short, dated, observed. The same voice that writes Slow Morocco, with the volume turned down."
+  },
+  {
+    slug: "darija-io",
+    name: "Darija.io",
+    url: "https://darija.io",
+    tier: "write",
+    positioning: "Moroccan Arabic, structured.",
+    context:
+      "A reference for Moroccan Darija — roots, derivations, audio, dialect notes. Built so a learner can speak in the language, and so AI systems can cite it."
+  },
+  {
+    slug: "tamazight-io",
+    name: "Tamazight.io",
+    url: "https://tamazight.io",
+    tier: "write",
+    positioning: "Amazigh, structured.",
+    context:
+      "A companion to Darija.io for Tamazight. Same shape, different language. Built to be used."
+  },
+
+  // Sell
+  {
+    slug: "zfriti",
+    name: "Zfriti",
+    url: "https://zfriti.com",
+    tier: "sell",
+    positioning: "A Moroccan pantry.",
+    context:
+      "Olive oil, spices, preserved things. Only what we'd cook with. The cultural work makes sure we know what those are."
+  },
+  {
+    slug: "tilwen",
+    name: "Tilwen",
+    url: "https://tilwen.com",
+    tier: "sell",
+    positioning: "A rug house.",
+    context:
+      "Rugs from North and West Africa, sourced where they're made and named where they come from. Catalogued before they're sold."
+  },
+
+  // Measure
+  {
+    slug: "hawazine",
+    name: "Hawazine",
+    url: "https://hawazine.com",
+    tier: "measure",
+    positioning: "Moroccan real estate, organized.",
+    context:
+      "Listings, prices, neighbourhoods, history. The way it should have been organized a decade ago."
+  },
+  {
+    slug: "cadastre",
+    name: "Cadastre",
+    url: "https://hawazine.com",
+    tier: "measure",
+    status: "Working title",
+    positioning: "The land layer.",
+    context:
+      "Parcels, ownership, deeds — the layer underneath Hawazine. Quiet infrastructure for the people who need to see clearly before they move."
+  },
+  {
+    slug: "travel-intelligence",
+    name: "Travel Intelligence",
+    url: "/products",
+    tier: "measure",
+    status: "Future",
+    positioning: "Reference data for travel operators.",
+    context:
+      "Comparative regional data, occupancy signals, source-of-truth records. Coming after Cadastre."
+  },
+
+  // Archive
+  {
+    slug: "ksour-archive",
+    name: "Ksour Archive",
+    url: "https://ksour.org",
+    tier: "archive",
+    positioning: "Saharan-Maghreb earthen architecture.",
+    context:
+      "Ksour, kasbahs, and the building traditions of the southern Maghreb. Survey, photography, structured records of a built environment that's changing fast."
+  },
+  {
+    slug: "house-of-weaves",
+    name: "House of Weaves",
+    url: "https://houseofweaves.com",
+    tier: "archive",
+    positioning: "Rugs of North and West Africa.",
+    context:
+      "Looms, fibres, motifs, and the people who keep them. Indexed by region, technique, and lineage. The rugs only — for now."
+  },
+  {
+    slug: "tazmgha",
+    name: "Tazmgha",
+    url: "https://tazmgha.africa",
+    tier: "archive",
+    positioning: "The Amazigh thread, across the continent.",
+    context:
+      "From the Atlas to the Sahel, the Amazigh world held in one place. Cite-ready. Not going anywhere."
   }
 ];
 
-export const HOST = PORTFOLIO.filter((p) => p.category === "host");
-export const PUBLISH = PORTFOLIO.filter((p) => p.category === "publish");
-export const ARCHIVE = PORTFOLIO.filter((p) => p.category === "archive");
+export function byTier(tier: Tier): Property[] {
+  return PORTFOLIO.filter((p) => p.tier === tier);
+}
+
+export function getProperty(slug: string): Property | undefined {
+  return PORTFOLIO.find((p) => p.slug === slug);
+}
