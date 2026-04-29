@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#0a0a0a"/><text x="16" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#ffffff">d</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #0a0a0a; }
+    .fg { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #ffffff; }
+      .fg { fill: #0a0a0a; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32"/>
+  <text
+    x="7"
+    y="25"
+    class="fg"
+    font-family="'Instrument Serif', 'Didot', 'Bodoni 72', 'Bodoni MT', Georgia, 'Times New Roman', serif"
+    font-style="italic"
+    font-weight="400"
+    font-size="26"
+    letter-spacing="-0.02em"
+  >d.</text>
+</svg>
