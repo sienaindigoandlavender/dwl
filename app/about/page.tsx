@@ -3,18 +3,37 @@ import Link from "next/link";
 import Masthead from "@/components/Masthead";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import JsonLd from "@/components/JsonLd";
 import { PORTFOLIO } from "@/lib/portfolio";
+import { aboutPageSchema, breadcrumbSchema, personSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Dancing with Lions is a travel tech company. Six product lines. The portfolio is the proof."
+    "Dancing with Lions is a travel tech company. Six product lines. The portfolio is the proof.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About — Dancing with Lions",
+    description: "The company, the portfolio, the founder.",
+    url: "/about",
+    type: "website"
+  }
 };
 
 export default function AboutPage() {
   return (
     <>
       <Masthead />
+      <JsonLd
+        data={[
+          aboutPageSchema(),
+          personSchema(),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "About", url: "/about" }
+          ])
+        ]}
+      />
 
       <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-12">
         <Reveal>

@@ -7,7 +7,14 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "What Dancing with Lions builds — hospitality systems, editorial infrastructure, and cultural data infrastructure."
+    "What Dancing with Lions builds — hospitality systems, editorial infrastructure, and cultural data infrastructure.",
+  alternates: { canonical: "/products" },
+  openGraph: {
+    title: "Products — Dancing with Lions",
+    description: "Three product lines under the travel tech umbrella.",
+    url: "/products",
+    type: "website"
+  }
 };
 
 type Status = "Operating" | "In development" | "Roadmap";

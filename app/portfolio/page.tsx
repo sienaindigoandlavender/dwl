@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import Masthead from "@/components/Masthead";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import JsonLd from "@/components/JsonLd";
 import { PORTFOLIO, TIERS, type Property } from "@/lib/portfolio";
+import { breadcrumbSchema, portfolioCollectionSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "The properties of Dancing with Lions, grouped by tier — host, write, teach, sell, measure, archive."
+    "Fifteen properties across six tiers — host, write, teach, sell, measure, archive.",
+  alternates: { canonical: "/portfolio" },
+  openGraph: {
+    title: "Portfolio — Dancing with Lions",
+    description: "Fifteen properties across six tiers.",
+    url: "/portfolio",
+    type: "website"
+  }
 };
 
 const ART_GRADIENTS: Record<string, string> = {
@@ -95,6 +104,15 @@ export default function PortfolioPage() {
   return (
     <>
       <Masthead />
+      <JsonLd
+        data={[
+          portfolioCollectionSchema(),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Portfolio", url: "/portfolio" }
+          ])
+        ]}
+      />
 
       <section className="mx-auto max-w-content px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Reveal>
