@@ -17,7 +17,7 @@ const TIER_BLOCKS: TierBlock[] = [
     body: (
       <>
         Riad di Siena is a six-room riad in the Marrakech medina. We run the front desk and the
-        kitchen ourselves. Most repeat guests return within the year.
+        kitchen ourselves. Most guests come back.
       </>
     ),
     link: { href: "https://riaddisiena.com", label: "Riad di Siena" }
@@ -27,8 +27,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We write.",
     body: (
       <>
-        Slow Morocco is the regional editorial: long-form pieces on places, kitchens, and
-        lineages. Derb37 is the daily column, filed from inside the riad.
+        Slow Morocco is the long-form regional editorial. Derb37 is the daily column, filed from
+        inside the riad.
       </>
     ),
     link: { href: "https://slowmorocco.com", label: "Slow Morocco" }
@@ -38,8 +38,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We teach.",
     body: (
       <>
-        Darija.io is an open Moroccan Arabic reference: roots, audio, dialect notes. Tamazight.io
-        is the same shape for Amazigh. Both are free to use.
+        Darija.io is an open Moroccan Arabic reference. Tamazight.io is the same for Amazigh.
+        Both are free to use.
       </>
     ),
     link: { href: "https://darija.io", label: "Darija.io" }
@@ -49,8 +49,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We sell.",
     body: (
       <>
-        Zfriti sells olive oil, spices, and preserves from a Moroccan pantry. Tilwen sells rugs
-        from North and West Africa, named where they were woven.
+        Zfriti is a Moroccan pantry. Tilwen is a rug house from North and West Africa. Both hold
+        what we already use at the riad.
       </>
     ),
     link: { href: "https://zfriti.com", label: "Zfriti" }
@@ -60,8 +60,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We measure.",
     body: (
       <>
-        Hawazine is the Moroccan real-estate index: listings, prices, neighbourhoods. Cadastre is
-        the parcel layer beneath it. Travel Intelligence comes after Cadastre.
+        Hawazine is the Moroccan real-estate index. Cadastre is the parcel layer beneath it.
+        Travel Intelligence follows Cadastre.
       </>
     ),
     link: { href: "https://hawazine.com", label: "Hawazine" }
@@ -71,9 +71,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We archive.",
     body: (
       <>
-        Ksour Archive records Saharan earthen architecture before it is gone. House of Weaves
-        catalogues North and West African rug traditions. Tazmgha follows the Amazigh thread
-        across the continent.
+        Ksour Archive records Saharan earthen architecture. House of Weaves catalogues North and
+        West African rug traditions. Tazmgha follows the Amazigh thread across the continent.
       </>
     ),
     link: { href: "https://ksour.org", label: "Ksour Archive" }
@@ -103,10 +102,10 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={120}>
             <p className="mono text-base text-text-secondary mt-10 max-w-2xl leading-relaxed">
-              We run a riad in Marrakech. Around it we built a portfolio: editorial about Morocco,
-              language references for Darija and Amazigh, a real-estate index, archives, and
-              goods we use ourselves. We license the systems behind them once we have run them
-              ourselves.
+              We are building it from Marrakech, in public. The portfolio today: a riad in the
+              medina, an editorial body about Morocco, open language references for Darija and
+              Amazigh, a Moroccan pantry, a rug house, a real-estate index with a parcel layer
+              beneath it, and archives for the architecture and weaving going missing first.
             </p>
           </Reveal>
         </div>
@@ -156,7 +155,7 @@ export default function HomePage() {
                 letterSpacing: "-0.02em"
               }}
             >
-              We run the portfolio. We license the systems behind it.
+              Built from the Marrakech medina.
             </p>
           </Reveal>
         </div>
