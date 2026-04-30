@@ -7,11 +7,11 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "What Dancing with Lions builds — hospitality systems, editorial infrastructure, and cultural data infrastructure.",
+    "Three product lines from Dancing with Lions: hospitality systems, editorial infrastructure, cultural data infrastructure.",
   alternates: { canonical: "/products" },
   openGraph: {
-    title: "Products — Dancing with Lions",
-    description: "Three product lines under the travel tech umbrella.",
+    title: "Products | Dancing with Lions",
+    description: "Three product lines for places, hosts, and travelers.",
     url: "/products",
     type: "website"
   }
@@ -34,7 +34,7 @@ const LINES: ProductLine[] = [
     title: "Hospitality systems",
     positioning: "Operations, productized.",
     body:
-      "What we've learned operating Riad di Siena, written down and shaped into systems. Operations playbooks, review intelligence, AI dispute frameworks for OTAs, guest-comms tooling. Currently used internally across the portfolio. The roadmap is licensable to other independent operators who want enterprise-grade systems without enterprise-grade overhead.",
+      "We run Riad di Siena. We wrote the playbook. Operations runbooks, review intelligence, AI dispute handling for OTAs, guest-comms tooling. The portfolio runs on it. Independent operators license it next.",
     status: "Operating"
   },
   {
@@ -42,7 +42,7 @@ const LINES: ProductLine[] = [
     title: "Editorial infrastructure",
     positioning: "The stack underneath the editorial properties.",
     body:
-      "The Next.js stack and AI-agent layer that powers Slow Morocco, House of Weaves, and the Ksour Archive. Bidirectional graph publishing, machine-readable schema, structured data ready for GEO and AEO. The same stack ships every editorial property in the portfolio and is what we'll license externally as it matures.",
+      "Slow Morocco, House of Weaves, and Ksour Archive run on one Next.js stack with an AI-agent layer. Bidirectional graph publishing. Machine-readable schema. Structured data for GEO and AEO. We license it as it matures.",
     status: "In development"
   },
   {
@@ -50,7 +50,7 @@ const LINES: ProductLine[] = [
     title: "Cultural data infrastructure",
     positioning: "The reference layer.",
     body:
-      "Structured intelligence — comparative regional data, lexicons, archives — exposed through a knowledge API and built so AI systems can ground answers in cited, source-of-truth records. Live data modules below; more in development.",
+      "Comparative regional data, lexicons, archives. Exposed through a knowledge API. AI systems ground answers in cited records. Live modules below.",
     status: "Operating",
     links: [
       { href: "/data/maghreb-compared", label: "Maghreb, compared" },
@@ -85,8 +85,8 @@ export default function ProductsPage() {
         </Reveal>
         <Reveal delay={160}>
           <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-            Three product lines. Each one started as an internal tool inside the portfolio and was
-            kept only when it earned its place. We ship what we operate.
+            Three product lines. Each one started inside the portfolio and earned its place. We
+            ship what we operate.
           </p>
         </Reveal>
       </section>
