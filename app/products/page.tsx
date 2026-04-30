@@ -7,11 +7,11 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Three product lines from Dancing with Lions: hospitality systems, editorial infrastructure, cultural data infrastructure.",
+    "Three product lines from Dancing with Lions. Each one built for the portfolio first.",
   alternates: { canonical: "/products" },
   openGraph: {
     title: "Products | Dancing with Lions",
-    description: "Three product lines for places, hosts, and travelers.",
+    description: "Three product lines from Dancing with Lions.",
     url: "/products",
     type: "website"
   }
@@ -32,9 +32,9 @@ const LINES: ProductLine[] = [
   {
     number: "01",
     title: "Hospitality systems",
-    positioning: "Operations, productized.",
+    positioning: "The systems we use to run the riad.",
     body:
-      "We run Riad di Siena. We wrote the playbook. The portfolio runs on it. Independent operators license it next.",
+      "The internal systems behind Riad di Siena and the rest of the host portfolio. Hosh.space is the guest-management app at the front of this line.",
     status: "Operating"
   },
   {
@@ -42,7 +42,7 @@ const LINES: ProductLine[] = [
     title: "Editorial infrastructure",
     positioning: "The stack underneath the editorial properties.",
     body:
-      "The editorial stack underneath Slow Morocco, House of Weaves, and Ksour Archive. We built it. We run it. We license it when it is ready.",
+      "The publishing system behind Slow Morocco, Derb37, House of Weaves, and Ksour Archive. Built so the editorial can move at our pace.",
     status: "In development"
   },
   {
@@ -50,7 +50,7 @@ const LINES: ProductLine[] = [
     title: "Cultural data infrastructure",
     positioning: "The reference layer.",
     body:
-      "Comparative regional data, lexicons, and archives. We expose them through a knowledge API. Live modules below.",
+      "Comparative regional data, lexicons, and archives. The Knowledge API exposes the records. Live modules below.",
     status: "Operating",
     links: [
       { href: "/data/maghreb-compared", label: "Maghreb, compared" },
@@ -85,8 +85,8 @@ export default function ProductsPage() {
         </Reveal>
         <Reveal delay={160}>
           <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-            Three product lines. Each one started inside the portfolio and earned its place. We
-            ship what we operate.
+            Three product lines. Each one was built for the portfolio. Two are operating today.
+            One is in development.
           </p>
         </Reveal>
       </section>
