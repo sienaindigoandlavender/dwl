@@ -34,7 +34,7 @@ const LINES: ProductLine[] = [
     title: "Hospitality systems",
     positioning: "Operations, productized.",
     body:
-      "We run Riad di Siena. We wrote the playbook. Operations runbooks, review intelligence, AI dispute handling for OTAs, guest-comms tooling. The portfolio runs on it. Independent operators license it next.",
+      "We run Riad di Siena. We wrote the playbook. The portfolio runs on it. Independent operators license it next.",
     status: "Operating"
   },
   {
@@ -42,7 +42,7 @@ const LINES: ProductLine[] = [
     title: "Editorial infrastructure",
     positioning: "The stack underneath the editorial properties.",
     body:
-      "Slow Morocco, House of Weaves, and Ksour Archive run on one Next.js stack with an AI-agent layer. Bidirectional graph publishing. Machine-readable schema. Structured data for GEO and AEO. We license it as it matures.",
+      "The editorial stack underneath Slow Morocco, House of Weaves, and Ksour Archive. We built it. We run it. We license it when it is ready.",
     status: "In development"
   },
   {
@@ -50,7 +50,7 @@ const LINES: ProductLine[] = [
     title: "Cultural data infrastructure",
     positioning: "The reference layer.",
     body:
-      "Comparative regional data, lexicons, archives. Exposed through a knowledge API. AI systems ground answers in cited records. Live modules below.",
+      "Comparative regional data, lexicons, and archives. We expose them through a knowledge API. Live modules below.",
     status: "Operating",
     links: [
       { href: "/data/maghreb-compared", label: "Maghreb, compared" },
