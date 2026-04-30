@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Maghreb, compared",
   description:
-    "Comparative regional data across Morocco, Algeria, Tunisia, Libya, and Mauritania."
+    "Comparative data across Morocco, Algeria, Tunisia, Libya, and Mauritania."
 };
 
 const PALETTE = [
@@ -36,7 +36,7 @@ export default function MaghrebComparedPage() {
     <>
       <Masthead />
       <article className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-24">
-        <div className="mono uppercase-micro text-text-muted mb-6">Data module — Operating</div>
+        <div className="mono uppercase-micro text-text-muted mb-6">Data module · Operating</div>
         <h1
           className="serif text-text"
           style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", lineHeight: 1.0, letterSpacing: "-0.03em" }}
@@ -44,8 +44,8 @@ export default function MaghrebComparedPage() {
           Maghreb, compared.
         </h1>
         <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-          Comparative regional data across the five Maghreb states — population, area, capitals,
-          independence dates. The full module exposes time-series and reference cross-links via the
+          Comparative data across the five Maghreb states. Population, area, capitals,
+          independence dates. The full module exposes time-series and cross-references through the
           Knowledge API.
         </p>
 
