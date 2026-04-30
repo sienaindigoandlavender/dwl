@@ -10,7 +10,7 @@ import { aboutPageSchema, breadcrumbSchema, personSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Dancing with Lions builds calm travel infrastructure for places, hosts, and travelers. Six product lines. The portfolio is the proof.",
+    "Dancing with Lions is building calm travel infrastructure for places, hosts, and travelers. Operating from Marrakech.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About | Dancing with Lions",
@@ -63,20 +63,22 @@ export default function AboutPage() {
           <div className="md:col-span-9 space-y-6 max-w-prose">
             <Reveal delay={60}>
               <p className="text-body text-text-body">
-                Dancing with Lions builds calm travel infrastructure. Six product lines: host,
-                write, teach, sell, measure, archive. One company.
+                Dancing with Lions is building calm travel infrastructure for places, hosts, and
+                travelers. Operating from Marrakech.
               </p>
             </Reveal>
             <Reveal delay={120}>
               <p className="text-body text-text-body">
-                We host a riad. We write the editorial. We teach the languages. We sell the
-                goods. We measure the land. We archive what tends to drift. Each line serves
-                places, hosts, or travelers. Most serve all three.
+                The portfolio today: a six-room riad in the Marrakech medina, an editorial body
+                about Morocco, open language references for Darija and Amazigh, a Moroccan pantry,
+                a rug house, a real-estate index with a parcel layer beneath it, and archives for
+                the architecture and weaving going missing first.
               </p>
             </Reveal>
             <Reveal delay={180}>
               <p className="text-body text-text-body">
-                The portfolio is the proof. The infrastructure is the company.
+                Six functions: host, write, teach, sell, measure, archive. Fifteen properties so
+                far.
               </p>
             </Reveal>
           </div>
