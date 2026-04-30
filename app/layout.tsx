@@ -17,11 +17,12 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-FQR11PP7DN";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Dancing with Lions — Travel technology for people who want to arrive considered",
-    template: "%s — Dancing with Lions"
+    default:
+      "Dancing with Lions: Calm travel infrastructure for places, hosts, and travelers",
+    template: "%s | Dancing with Lions"
   },
   description:
-    "Dancing with Lions is a travel tech company. Six product lines. One quiet idea — that travel, done well, is a considered act.",
+    "Dancing with Lions builds calm travel infrastructure for places, hosts, and travelers. Six product lines. One company.",
   applicationName: "Dancing with Lions",
   authors: [{ name: "Dancing with Lions", url: SITE_URL }],
   creator: "Dancing with Lions",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dancing with Lions",
     description:
-      "Travel technology for people who want to arrive considered. Six product lines, one umbrella.",
+      "Calm travel infrastructure for places, hosts, and travelers. Six product lines. One company.",
     url: SITE_URL,
     siteName: "Dancing with Lions",
     locale: "en_US",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dancing with Lions",
     description:
-      "Travel technology for people who want to arrive considered. Six product lines, one umbrella."
+      "Calm travel infrastructure for places, hosts, and travelers."
   },
   robots: {
     index: true,

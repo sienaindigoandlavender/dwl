@@ -30,7 +30,7 @@ export const PORTFOLIO: Property[] = [
     tier: "host",
     positioning: "A working riad in the Marrakech medina.",
     context:
-      "Six rooms, real guests, a kitchen that runs every day. Everything we know about hospitality, we learned with the keys in our hand."
+      "Six rooms. A kitchen that runs every day. Guests who come back. We learned hospitality with the keys in our hand."
   },
   {
     slug: "derb-so",
@@ -39,7 +39,7 @@ export const PORTFOLIO: Property[] = [
     tier: "host",
     positioning: "Streets, addresses, and the geography of the medina.",
     context:
-      "A wayfinding layer for the medina — names, aliases, the small streets the standard maps miss. A reference for guests, operators, and travel platforms."
+      "Names, aliases, and the small streets standard maps miss. A reference for guests, hosts, and travel platforms."
   },
   {
     slug: "hosh-space",
@@ -49,7 +49,7 @@ export const PORTFOLIO: Property[] = [
     status: "In development",
     positioning: "Courtyards. Quiet stays.",
     context:
-      "A short list of houses with courtyards, run the way Riad di Siena is run. In development."
+      "A short list of houses with courtyards. We run them the way we run Riad di Siena."
   },
 
   // Write
@@ -60,7 +60,7 @@ export const PORTFOLIO: Property[] = [
     tier: "write",
     positioning: "The country at a slower scale.",
     context:
-      "Region, season, kitchen, lineage. Written slowly. Indexed for the long tail. Built for the reader past the first ten search results."
+      "Region. Season. Kitchen. Lineage. We write for the reader past the first ten search results."
   },
   {
     slug: "derb37",
@@ -69,7 +69,7 @@ export const PORTFOLIO: Property[] = [
     tier: "write",
     positioning: "Notes from the medina.",
     context:
-      "A column written from inside the riad. Short, dated, observed. The same voice that writes Slow Morocco, with the volume turned down."
+      "A column from inside the riad. Short. Dated. Observed. Same voice as Slow Morocco, volume turned down."
   },
   {
     slug: "darija-io",
@@ -78,7 +78,7 @@ export const PORTFOLIO: Property[] = [
     tier: "write",
     positioning: "Moroccan Arabic, structured.",
     context:
-      "A reference for Moroccan Darija — roots, derivations, audio, dialect notes. Built so a learner can speak in the language, and so AI systems can cite it."
+      "Roots, derivations, audio, dialect notes. We built it so a learner can speak. We built it so AI systems can cite."
   },
   {
     slug: "tamazight-io",
@@ -87,7 +87,7 @@ export const PORTFOLIO: Property[] = [
     tier: "write",
     positioning: "Amazigh, structured.",
     context:
-      "A companion to Darija.io for Tamazight. Same shape, different language. Built to be used."
+      "Companion to Darija.io. Same shape, different language. Built to be used."
   },
 
   // Sell
@@ -98,7 +98,7 @@ export const PORTFOLIO: Property[] = [
     tier: "sell",
     positioning: "A Moroccan pantry.",
     context:
-      "Olive oil, spices, preserved things. Only what we'd cook with. The cultural work makes sure we know what those are."
+      "Olive oil, spices, preserved goods. We sell what we cook with."
   },
   {
     slug: "tilwen",
@@ -107,7 +107,7 @@ export const PORTFOLIO: Property[] = [
     tier: "sell",
     positioning: "A rug house.",
     context:
-      "Rugs from North and West Africa, sourced where they're made and named where they come from. Catalogued before they're sold."
+      "Rugs from North and West Africa. Sourced where they are made. Named where they come from. Catalogued before sale."
   },
 
   // Measure
@@ -118,7 +118,7 @@ export const PORTFOLIO: Property[] = [
     tier: "measure",
     positioning: "Moroccan real estate, organized.",
     context:
-      "Listings, prices, neighbourhoods, history. The way it should have been organized a decade ago."
+      "Listings, prices, neighbourhoods, history. Buyers see the ground before they move on it."
   },
   {
     slug: "cadastre",
@@ -128,7 +128,7 @@ export const PORTFOLIO: Property[] = [
     status: "Working title",
     positioning: "The land layer.",
     context:
-      "Parcels, ownership, deeds — the layer underneath Hawazine. Quiet infrastructure for the people who need to see clearly before they move."
+      "Parcels, ownership, deeds. The layer underneath Hawazine."
   },
   {
     slug: "travel-intelligence",
@@ -149,7 +149,7 @@ export const PORTFOLIO: Property[] = [
     tier: "archive",
     positioning: "Saharan-Maghreb earthen architecture.",
     context:
-      "Ksour, kasbahs, and the building traditions of the southern Maghreb. Survey, photography, structured records of a built environment that's changing fast."
+      "Ksour, kasbahs, and the building traditions of the southern Maghreb. Survey, photography, structured records of a built environment that is changing fast."
   },
   {
     slug: "house-of-weaves",
@@ -158,7 +158,7 @@ export const PORTFOLIO: Property[] = [
     tier: "archive",
     positioning: "Rugs of North and West Africa.",
     context:
-      "Looms, fibres, motifs, and the people who keep them. Indexed by region, technique, and lineage. The rugs only — for now."
+      "Looms, fibres, motifs, and the weavers who keep them. Indexed by region, technique, and lineage. Rugs first. The rest follows."
   },
   {
     slug: "tazmgha",
@@ -167,7 +167,7 @@ export const PORTFOLIO: Property[] = [
     tier: "archive",
     positioning: "The Amazigh thread, across the continent.",
     context:
-      "From the Atlas to the Sahel, the Amazigh world held in one place. Cite-ready. Not going anywhere."
+      "From the Atlas to the Sahel. The Amazigh world held in one place. Cited."
   }
 ];
 
