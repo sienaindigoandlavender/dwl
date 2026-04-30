@@ -7,11 +7,12 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Three product lines from Dancing with Lions. Each one built for the portfolio first.",
+    "Every tool we build started as an internal tool inside our tourism operations. We build for ourselves first, then share with others.",
   alternates: { canonical: "/products" },
   openGraph: {
     title: "Products | Dancing with Lions",
-    description: "Three product lines from Dancing with Lions.",
+    description:
+      "Every PMS claims more revenue and profit. We claim calm. Without calm, an operation cannot scale.",
     url: "/products",
     type: "website"
   }
@@ -85,8 +86,9 @@ export default function ProductsPage() {
         </Reveal>
         <Reveal delay={160}>
           <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-            Three product lines. Each one was built for the portfolio. Two are operating today.
-            One is in development.
+            Every tool we build started as an internal tool inside our tourism operations. We
+            build for ourselves first. Now we are sharing the tools with others. Every PMS claims
+            more revenue and more profit. We claim calm. Without calm, an operation cannot scale.
           </p>
         </Reveal>
       </section>

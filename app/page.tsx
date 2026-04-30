@@ -157,7 +157,8 @@ export default function HomePage() {
                 letterSpacing: "-0.02em"
               }}
             >
-              Built from the Marrakech medina.
+              We design calm travel infrastructure for places, hosts, and travelers. An ecosystem
+              often run on chaos and stress.
             </p>
           </Reveal>
         </div>
