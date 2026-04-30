@@ -33,25 +33,25 @@ const LINES: ProductLine[] = [
   {
     number: "01",
     title: "Hospitality systems",
-    positioning: "The systems we use to run the riad.",
+    positioning: "Most PMS software optimizes the manager's dashboard. We optimize the front desk.",
     body:
-      "The internal systems behind Riad di Siena and the rest of the host portfolio. Hosh.space is the guest-management app at the front of this line.",
+      "Hosh.space is the guest-management app at the front of this line. Fewer tabs. Fewer alerts. Staff stay on the guest, not the screen. We use it to run Riad di Siena.",
     status: "Operating"
   },
   {
     number: "02",
     title: "Editorial infrastructure",
-    positioning: "The stack underneath the editorial properties.",
+    positioning: "Most publishing platforms push for more posts, more often. Ours lets the writing wait.",
     body:
-      "The publishing system behind Slow Morocco, Derb37, House of Weaves, and Ksour Archive. Built so the editorial can move at our pace.",
+      "Slow Morocco, Derb37, House of Weaves, and Ksour Archive run on it. The editorial moves at the pace of the work, not the calendar. The same stack ships every editorial property in the portfolio.",
     status: "In development"
   },
   {
     number: "03",
     title: "Cultural data infrastructure",
-    positioning: "The reference layer.",
+    positioning: "Most travel data chases the next quarter. We keep records meant to outlast it.",
     body:
-      "Comparative regional data, lexicons, and archives. The Knowledge API exposes the records. Live modules below.",
+      "Comparative regional data, lexicons, and archives. The Knowledge API exposes the records so they can be cited by humans and machines. Live modules below.",
     status: "Operating",
     links: [
       { href: "/data/maghreb-compared", label: "Maghreb, compared" },
