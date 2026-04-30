@@ -16,9 +16,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We host.",
     body: (
       <>
-        Riad di Siena is a working riad in the Marrakech medina. Six rooms, a kitchen that runs
-        every day, guests who keep coming back. Everything we know about hospitality, we learned
-        with the keys in our hand.
+        Riad di Siena is a working riad in the Marrakech medina. Six rooms. A kitchen that runs
+        every day. Guests who come back. We learned hospitality with the keys in our hand.
       </>
     ),
     link: { href: "https://riaddisiena.com", label: "Riad di Siena" }
@@ -28,9 +27,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We write.",
     body: (
       <>
-        Slow Morocco and Derb37 are how we put what we know into sentences. Region, season,
-        kitchen, lineage. Written slowly. Indexed for the long tail. Built for the reader who's
-        already past the first ten search results.
+        Slow Morocco and Derb37 turn what we know into sentences. Region. Season. Kitchen.
+        Lineage. We write for the reader past the first ten search results.
       </>
     ),
     link: { href: "https://slowmorocco.com", label: "Slow Morocco" }
@@ -40,10 +38,9 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We teach.",
     body: (
       <>
-        Darija.io and Tamazight.io are language apps for the two languages most people talking{" "}
-        <em className="serif-italic">about</em> Morocco never quite learn to speak{" "}
-        <em className="serif-italic">in</em>. One for Moroccan Arabic. One for Amazigh. Both built
-        to be used, not just admired.
+        Darija.io covers Moroccan Arabic. Tamazight.io covers Amazigh. Two languages more written{" "}
+        <em className="serif-italic">about</em> than spoken{" "}
+        <em className="serif-italic">in</em>. We built both to be used.
       </>
     ),
     link: { href: "https://darija.io", label: "Darija.io" }
@@ -53,8 +50,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We sell.",
     body: (
       <>
-        Zfriti is a Moroccan pantry. Tilwen is a rug house. We only sell things we'd live with —
-        and the cultural work makes sure we know what those are.
+        Zfriti is a Moroccan pantry. Tilwen is a rug house. We sell what we live with. The
+        cultural work tells us what those things are.
       </>
     ),
     link: { href: "https://zfriti.com", label: "Zfriti" }
@@ -64,9 +61,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We measure.",
     body: (
       <>
-        Hawazine is the way Moroccan real estate should have been organized a decade ago. Cadastre
-        sits underneath. Travel Intelligence comes next. Quiet infrastructure for the people who
-        need to see clearly before they move.
+        Hawazine organizes Moroccan real estate. Cadastre maps the land underneath. Travel
+        Intelligence comes next. Buyers and operators see the ground before they move on it.
       </>
     ),
     link: { href: "https://hawazine.com", label: "Hawazine" }
@@ -76,9 +72,9 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We archive.",
     body: (
       <>
-        Ksour Archive, House of Weaves, and Tazmgha hold things that tend to drift — Saharan
-        earthen architecture, the rugs of North and West Africa, the Amazigh thread across the
-        continent. We keep them in one place. Cite-ready. Not going anywhere.
+        Ksour Archive holds Saharan earthen architecture. House of Weaves holds the rugs of North
+        and West Africa. Tazmgha holds the Amazigh thread across the continent. We keep them in
+        one place. Sourced. Cited.
       </>
     ),
     link: { href: "https://ksour.org", label: "Ksour Archive" }
@@ -90,7 +86,7 @@ export default function HomePage() {
     <>
       <Masthead />
 
-      {/* Thesis block — full viewport */}
+      {/* Thesis block, full viewport */}
       <section className="min-h-[calc(100vh-96px)] flex items-center">
         <div className="mx-auto max-w-content w-full px-8 md:px-16 lg:px-24 py-24">
           <Reveal>
@@ -102,14 +98,14 @@ export default function HomePage() {
                 letterSpacing: "-0.03em"
               }}
             >
-              Travel technology for people who want to{" "}
-              <em className="serif-italic">arrive considered</em>.
+              Calm travel infrastructure for{" "}
+              <em className="serif-italic">places, hosts, and travelers</em>.
             </h1>
           </Reveal>
           <Reveal delay={120}>
             <p className="mono text-base text-text-secondary mt-10 max-w-2xl leading-relaxed">
-              Dancing with Lions is a travel tech company. Six product lines. One quiet idea —
-              that travel, done well, is a considered act.
+              Dancing with Lions builds the systems hosts run on, the editorial layer places need,
+              and the reference data travelers can trust. Six product lines. One company.
             </p>
           </Reveal>
         </div>
@@ -120,7 +116,7 @@ export default function HomePage() {
       {/* Six tiers expanded */}
       <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24 md:py-32">
         <Reveal>
-          <div className="mono uppercase-micro text-text-muted mb-12">Six tiers, one umbrella</div>
+          <div className="mono uppercase-micro text-text-muted mb-12">Six tiers, one company</div>
         </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20">
           {TIER_BLOCKS.map((tier, i) => (
@@ -159,7 +155,7 @@ export default function HomePage() {
                 letterSpacing: "-0.02em"
               }}
             >
-              We design travel technology that helps people arrive considered — and stay that way.
+              We build the infrastructure. Hosts run it. Places use it. Travelers trust it.
             </p>
           </Reveal>
         </div>
