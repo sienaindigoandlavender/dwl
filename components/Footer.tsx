@@ -11,7 +11,7 @@ export default function Footer() {
               DANCING WITH LIONS
             </div>
             <p className="serif text-3xl md:text-4xl leading-snug text-white max-w-xl">
-              Travel tech for a more legible world.
+              Calm travel infrastructure for places, hosts, and travelers.
             </p>
           </div>
 
