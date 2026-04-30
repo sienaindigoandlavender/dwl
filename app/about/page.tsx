@@ -147,7 +147,7 @@ export default function AboutPage() {
           <div className="md:col-span-9 max-w-prose">
             <Reveal delay={60}>
               <p className="text-body text-text-body">
-                Jacqueline Ng founded Dancing with Lions. She runs it from Marrakech.
+                Jacqueline Ng is the Canadian founder and architect of the Dancing with Lions ecosystem.
               </p>
             </Reveal>
           </div>
