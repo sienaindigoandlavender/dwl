@@ -4,7 +4,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Al-Andalus atlas",
-  description: "Places, lineages, and the post-1492 Maghreb diaspora — mapped and cross-indexed."
+  description:
+    "Places, lineages, and the post-1492 Maghreb diaspora. Mapped and cross-indexed."
 };
 
 const PLACES = [
@@ -24,7 +25,7 @@ export default function AlAndalusPage() {
     <>
       <Masthead />
       <article className="mx-auto max-w-content px-8 md:px-16 lg:px-24 pt-16 md:pt-24 pb-24">
-        <div className="mono uppercase-micro text-text-muted mb-6">Data module — Operating</div>
+        <div className="mono uppercase-micro text-text-muted mb-6">Data module · Operating</div>
         <h1
           className="serif text-text"
           style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", lineHeight: 1.0, letterSpacing: "-0.03em" }}
@@ -33,7 +34,7 @@ export default function AlAndalusPage() {
         </h1>
         <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
           Places, lineages, and the post-1492 Maghreb diaspora. Each place links to a record with
-          dates, sources, and onward references — including the Andalusi quarters founded across
+          dates, sources, and onward references, including the Andalusi quarters founded across
           North Africa by exiled families.
         </p>
 
