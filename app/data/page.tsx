@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Data",
-  description: "Structured cultural-data modules from Dancing with Lions."
+  description:
+    "Reference modules from Dancing with Lions. Machine-readable, source-of-truth, cite-ready."
 };
 
 const MODULES = [
@@ -13,13 +14,13 @@ const MODULES = [
     slug: "maghreb-compared",
     title: "Maghreb, compared",
     description:
-      "Comparative regional data across Morocco, Algeria, Tunisia, Libya, and Mauritania."
+      "Comparative data across Morocco, Algeria, Tunisia, Libya, and Mauritania."
   },
   {
     slug: "al-andalus",
     title: "Al-Andalus atlas",
     description:
-      "Places, lineages, and the post-1492 Maghreb diaspora — mapped and cross-indexed."
+      "Places, lineages, and the post-1492 Maghreb diaspora. Mapped and cross-indexed."
   }
 ];
 
@@ -36,7 +37,7 @@ export default function DataIndex() {
           Cultural data infrastructure.
         </h1>
         <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-          Structured reference modules. Machine-readable, source-of-truth, cite-ready. Part of the{" "}
+          Reference modules. Machine-readable. Source-of-truth. Cite-ready. Part of the{" "}
           <Link href="/products" className="underline">
             Cultural data infrastructure
           </Link>{" "}
