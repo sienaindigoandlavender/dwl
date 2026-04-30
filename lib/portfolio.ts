@@ -30,7 +30,7 @@ export const PORTFOLIO: Property[] = [
     tier: "host",
     positioning: "A working riad in the Marrakech medina.",
     context:
-      "Six rooms. A kitchen that runs every day. Guests who come back. We learned hospitality with the keys in our hand."
+      "Six rooms. A kitchen that runs every day. We run the front desk and the kitchen ourselves."
   },
   {
     slug: "derb-so",
@@ -47,9 +47,9 @@ export const PORTFOLIO: Property[] = [
     url: "https://hosh.space",
     tier: "host",
     status: "In development",
-    positioning: "Courtyards. Quiet stays.",
+    positioning: "A guest-management app for hosts.",
     context:
-      "A short list of houses with courtyards. We run them the way we run Riad di Siena."
+      "Built so a host can run day-to-day operations calmly. We use it inside Riad di Siena first."
   },
 
   // Write
@@ -58,36 +58,38 @@ export const PORTFOLIO: Property[] = [
     name: "Slow Morocco",
     url: "https://slowmorocco.com",
     tier: "write",
-    positioning: "The country at a slower scale.",
+    positioning: "The long-form regional editorial.",
     context:
-      "Region. Season. Kitchen. Lineage. We write for the reader past the first ten search results."
+      "Long pieces about places, kitchens, and lineages in Morocco. Written from the medina."
   },
   {
     slug: "derb37",
     name: "Derb37",
     url: "https://derb37.com",
     tier: "write",
-    positioning: "Notes from the medina.",
+    positioning: "The daily column, filed from inside the riad.",
     context:
-      "A column from inside the riad. Short. Dated. Observed. Same voice as Slow Morocco, volume turned down."
+      "Short, dated entries. A working journal in public. Same voice as Slow Morocco, volume turned down."
   },
+
+  // Teach
   {
     slug: "darija-io",
     name: "Darija.io",
     url: "https://darija.io",
-    tier: "write",
-    positioning: "Moroccan Arabic, structured.",
+    tier: "teach",
+    positioning: "A learning app for Moroccan Arabic.",
     context:
-      "Roots, derivations, audio, dialect notes. We built it so a learner can speak. We built it so AI systems can cite."
+      "Built for people who want to actually speak Darija. Lessons, audio, and a structured reference behind them."
   },
   {
     slug: "tamazight-io",
     name: "Tamazight.io",
     url: "https://tamazight.io",
-    tier: "write",
-    positioning: "Amazigh, structured.",
+    tier: "teach",
+    positioning: "A learning app for Amazigh.",
     context:
-      "Companion to Darija.io. Same shape, different language. Built to be used."
+      "Companion to Darija.io. Same shape, different language."
   },
 
   // Sell
@@ -98,16 +100,16 @@ export const PORTFOLIO: Property[] = [
     tier: "sell",
     positioning: "A Moroccan pantry.",
     context:
-      "Olive oil, spices, preserved goods. We sell what we cook with."
+      "Olive oil, spices, and preserved goods. We stock what we already cook with at the riad."
   },
   {
     slug: "tilwen",
     name: "Tilwen",
     url: "https://tilwen.com",
     tier: "sell",
-    positioning: "A rug house.",
+    positioning: "A rug house from North and West Africa.",
     context:
-      "Rugs from North and West Africa. Sourced where they are made. Named where they come from. Catalogued before sale."
+      "Rugs sourced where they are made and named where they come from. Catalogued before they move."
   },
 
   // Measure
@@ -116,9 +118,9 @@ export const PORTFOLIO: Property[] = [
     name: "Hawazine",
     url: "https://hawazine.com",
     tier: "measure",
-    positioning: "Moroccan real estate, organized.",
+    positioning: "The Moroccan real-estate index.",
     context:
-      "Listings, prices, neighbourhoods, history. Buyers see the ground before they move on it."
+      "Listings, prices, neighbourhoods, history. One place to see the market clearly."
   },
   {
     slug: "cadastre",
@@ -126,9 +128,9 @@ export const PORTFOLIO: Property[] = [
     url: "https://hawazine.com",
     tier: "measure",
     status: "Working title",
-    positioning: "The land layer.",
+    positioning: "The parcel layer beneath Hawazine.",
     context:
-      "Parcels, ownership, deeds. The layer underneath Hawazine."
+      "Parcels, ownership, deeds. The land record under the listings."
   },
   {
     slug: "travel-intelligence",
@@ -138,7 +140,7 @@ export const PORTFOLIO: Property[] = [
     status: "Future",
     positioning: "Reference data for travel operators.",
     context:
-      "Comparative regional data, occupancy signals, source-of-truth records. Coming after Cadastre."
+      "Comparative regional data and occupancy signals. Follows Cadastre."
   },
 
   // Archive
@@ -147,18 +149,18 @@ export const PORTFOLIO: Property[] = [
     name: "Ksour Archive",
     url: "https://ksour.org",
     tier: "archive",
-    positioning: "Saharan-Maghreb earthen architecture.",
+    positioning: "A record of Saharan-Maghreb earthen architecture.",
     context:
-      "Ksour, kasbahs, and the building traditions of the southern Maghreb. Survey, photography, structured records of a built environment that is changing fast."
+      "Ksour, kasbahs, and the building traditions of the southern Maghreb. Survey, photography, and structured records of a built environment that is changing fast."
   },
   {
     slug: "house-of-weaves",
     name: "House of Weaves",
     url: "https://houseofweaves.com",
     tier: "archive",
-    positioning: "Rugs of North and West Africa.",
+    positioning: "A catalogue of North and West African rug traditions.",
     context:
-      "Looms, fibres, motifs, and the weavers who keep them. Indexed by region, technique, and lineage. Rugs first. The rest follows."
+      "Looms, fibres, motifs, and the weavers who keep them. Indexed by region, technique, and lineage."
   },
   {
     slug: "tazmgha",
@@ -167,7 +169,7 @@ export const PORTFOLIO: Property[] = [
     tier: "archive",
     positioning: "The Amazigh thread, across the continent.",
     context:
-      "From the Atlas to the Sahel. The Amazigh world held in one place. Cited."
+      "From the Atlas to the Sahel. The Amazigh world held in one place."
   }
 ];
 
