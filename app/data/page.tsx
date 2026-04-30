@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Data",
   description:
-    "Reference modules from Dancing with Lions. Machine-readable, source-of-truth, cite-ready."
+    "Most travel data tracks the next quarter. We track what stays true across years. Reference modules from Dancing with Lions, exposed through the Knowledge API."
 };
 
 const MODULES = [
@@ -37,7 +37,12 @@ export default function DataIndex() {
           Cultural data infrastructure.
         </h1>
         <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-          Reference modules. Machine-readable. Source-of-truth. Cite-ready. Part of the{" "}
+          Most travel data tracks the next quarter. We track what stays true across years.
+          Comparative regional data, lexicons, and archives, exposed through the{" "}
+          <Link href="/api/knowledge" className="underline">
+            Knowledge API
+          </Link>{" "}
+          and built to be cited by humans and machines. Part of the{" "}
           <Link href="/products" className="underline">
             Cultural data infrastructure
           </Link>{" "}
