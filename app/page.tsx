@@ -17,7 +17,8 @@ const TIER_BLOCKS: TierBlock[] = [
     body: (
       <>
         Riad di Siena is a six-room riad in the Marrakech medina. We run the front desk and the
-        kitchen ourselves. Most guests come back.
+        kitchen ourselves. Hosh is the guest-management app we built to keep day-to-day
+        operations calm.
       </>
     ),
     link: { href: "https://riaddisiena.com", label: "Riad di Siena" }
@@ -38,8 +39,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We teach.",
     body: (
       <>
-        Darija.io is an open Moroccan Arabic reference. Tamazight.io is the same for Amazigh.
-        Both are free to use.
+        Darija.io is a learning app for Moroccan Arabic. Tamazight.io is the same for Amazigh.
+        Built to be used by people who want to actually speak the language.
       </>
     ),
     link: { href: "https://darija.io", label: "Darija.io" }
@@ -103,9 +104,10 @@ export default function HomePage() {
           <Reveal delay={120}>
             <p className="mono text-base text-text-secondary mt-10 max-w-2xl leading-relaxed">
               We are building it from Marrakech, in public. The portfolio today: a riad in the
-              medina, an editorial body about Morocco, open language references for Darija and
-              Amazigh, a Moroccan pantry, a rug house, a real-estate index with a parcel layer
-              beneath it, and archives for the architecture and weaving going missing first.
+              medina, a guest-management app for hosts, an editorial body about Morocco, learning
+              apps for Darija and Amazigh, a Moroccan pantry, a rug house, a real-estate index
+              with a parcel layer beneath it, and archives for the architecture and weaving going
+              missing first.
             </p>
           </Reveal>
         </div>
