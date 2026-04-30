@@ -16,8 +16,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We host.",
     body: (
       <>
-        Riad di Siena is a working riad in the Marrakech medina. Six rooms. A kitchen that runs
-        every day. Guests who come back. We learned hospitality with the keys in our hand.
+        Riad di Siena is a six-room riad in the Marrakech medina. We run the front desk and the
+        kitchen ourselves. Most repeat guests return within the year.
       </>
     ),
     link: { href: "https://riaddisiena.com", label: "Riad di Siena" }
@@ -27,8 +27,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We write.",
     body: (
       <>
-        Slow Morocco and Derb37 turn what we know into sentences. Region. Season. Kitchen.
-        Lineage. We write for the reader past the first ten search results.
+        Slow Morocco is the regional editorial: long-form pieces on places, kitchens, and
+        lineages. Derb37 is the daily column, filed from inside the riad.
       </>
     ),
     link: { href: "https://slowmorocco.com", label: "Slow Morocco" }
@@ -38,9 +38,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We teach.",
     body: (
       <>
-        Darija.io covers Moroccan Arabic. Tamazight.io covers Amazigh. Two languages more written{" "}
-        <em className="serif-italic">about</em> than spoken{" "}
-        <em className="serif-italic">in</em>. We built both to be used.
+        Darija.io is an open Moroccan Arabic reference: roots, audio, dialect notes. Tamazight.io
+        is the same shape for Amazigh. Both are free to use.
       </>
     ),
     link: { href: "https://darija.io", label: "Darija.io" }
@@ -50,8 +49,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We sell.",
     body: (
       <>
-        Zfriti is a Moroccan pantry. Tilwen is a rug house. We sell what we live with. The
-        cultural work tells us what those things are.
+        Zfriti sells olive oil, spices, and preserves from a Moroccan pantry. Tilwen sells rugs
+        from North and West Africa, named where they were woven.
       </>
     ),
     link: { href: "https://zfriti.com", label: "Zfriti" }
@@ -61,8 +60,8 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We measure.",
     body: (
       <>
-        Hawazine organizes Moroccan real estate. Cadastre maps the land underneath. Travel
-        Intelligence comes next. Buyers and operators see the ground before they move on it.
+        Hawazine is the Moroccan real-estate index: listings, prices, neighbourhoods. Cadastre is
+        the parcel layer beneath it. Travel Intelligence comes after Cadastre.
       </>
     ),
     link: { href: "https://hawazine.com", label: "Hawazine" }
@@ -72,9 +71,9 @@ const TIER_BLOCKS: TierBlock[] = [
     verb: "We archive.",
     body: (
       <>
-        Ksour Archive holds Saharan earthen architecture. House of Weaves holds the rugs of North
-        and West Africa. Tazmgha holds the Amazigh thread across the continent. We keep them in
-        one place. Sourced. Cited.
+        Ksour Archive records Saharan earthen architecture before it is gone. House of Weaves
+        catalogues North and West African rug traditions. Tazmgha follows the Amazigh thread
+        across the continent.
       </>
     ),
     link: { href: "https://ksour.org", label: "Ksour Archive" }
@@ -86,7 +85,7 @@ export default function HomePage() {
     <>
       <Masthead />
 
-      {/* Thesis block, full viewport */}
+      {/* Thesis */}
       <section className="min-h-[calc(100vh-96px)] flex items-center">
         <div className="mx-auto max-w-content w-full px-8 md:px-16 lg:px-24 py-24">
           <Reveal>
@@ -104,8 +103,10 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={120}>
             <p className="mono text-base text-text-secondary mt-10 max-w-2xl leading-relaxed">
-              Dancing with Lions builds the systems hosts run on, the editorial layer places need,
-              and the reference data travelers can trust. Six product lines. One company.
+              We run a riad in Marrakech. Around it we built a portfolio: editorial about Morocco,
+              language references for Darija and Amazigh, a real-estate index, archives, and
+              goods we use ourselves. We license the systems behind them once we have run them
+              ourselves.
             </p>
           </Reveal>
         </div>
@@ -113,10 +114,10 @@ export default function HomePage() {
 
       <PortfolioStrip />
 
-      {/* Six tiers expanded */}
+      {/* Tier blocks */}
       <section className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-24 md:py-32">
         <Reveal>
-          <div className="mono uppercase-micro text-text-muted mb-12">Six tiers, one company</div>
+          <div className="mono uppercase-micro text-text-muted mb-12">Six functions, one company</div>
         </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20">
           {TIER_BLOCKS.map((tier, i) => (
@@ -143,7 +144,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Closing line */}
+      {/* Closing */}
       <section className="bg-background-alt">
         <div className="mx-auto max-w-content px-8 md:px-16 lg:px-24 py-32 md:py-44 text-center">
           <Reveal>
@@ -155,7 +156,7 @@ export default function HomePage() {
                 letterSpacing: "-0.02em"
               }}
             >
-              We build the infrastructure. Hosts run it. Places use it. Travelers trust it.
+              We run the portfolio. We license the systems behind it.
             </p>
           </Reveal>
         </div>
