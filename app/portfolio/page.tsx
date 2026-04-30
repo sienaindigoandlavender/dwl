@@ -9,11 +9,12 @@ import { breadcrumbSchema, portfolioCollectionSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Fifteen properties across six tiers: host, write, teach, sell, measure, archive.",
+    "Fifteen properties across six functions: host, write, teach, sell, measure, archive. Built for places, hosts, and travelers.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
     title: "Portfolio | Dancing with Lions",
-    description: "Fifteen properties across six tiers.",
+    description:
+      "Fifteen properties across six functions for places, hosts, and travelers.",
     url: "/portfolio",
     type: "website"
   }
@@ -132,8 +133,8 @@ export default function PortfolioPage() {
         </Reveal>
         <Reveal delay={160}>
           <p className="mono text-base text-text-secondary mt-8 max-w-2xl leading-relaxed">
-            Six tiers. Fifteen properties. Each one a surface on the same idea: calm travel
-            infrastructure for places, hosts, and travelers.
+            Fifteen properties across six functions: host, write, teach, sell, measure, archive.
+            Built for places, hosts, and travelers.
           </p>
         </Reveal>
       </section>
